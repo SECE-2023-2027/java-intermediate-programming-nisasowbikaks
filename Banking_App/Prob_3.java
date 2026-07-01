@@ -35,8 +35,7 @@ class BankAccount
      }
 }
 public class Prob_3
-{
-     public static void main(String[] args)
+{    public static void main(String[] args)
      {
           BankAccount account = new BankAccount("ACC123", "John", 500.0);
           account.deposit(200);
