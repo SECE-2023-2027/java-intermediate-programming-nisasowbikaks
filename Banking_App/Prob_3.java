@@ -37,9 +37,15 @@ class BankAccount
 public class Prob_3
 {    public static void main(String[] args)
      {
-          BankAccount account = new BankAccount("ACC123", "John", 500.0);
-          account.deposit(200);
-          account.withdraw(800);
-          System.out.println(account.getBalance());
+          Scanner sc=new Scanner(System.in);
+          String acc=sc.next();
+          String name=sc.next();
+          double amount=sc.nextDouble();
+          BankAccount account = new BankAccount("acc", "name", amount);
+          int amounttodeposit=sc.nextInt();
+          int amounttowithdraw=sc.nextInt();
+          account.deposit(amounttodeposit);
+          account.withdraw(amounttowithdraw);
+          System.out.println("The remaining balance is:"+account.getBalance());
      }
 }
